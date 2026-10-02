@@ -4,5 +4,19 @@
   --rl-beige-dark: #e8ddd2;
   --rl-cream: #f5ede0;
   --rl-white: #ffffff;
+
+  --rl-ink: var(--rl-warm-black);
+  --rl-ink-70: rgba(26, 26, 26, 0.7);
+  --rl-ink-50: rgba(26, 26, 26, 0.5);
+  --rl-ink-40: rgba(26, 26, 26, 0.4);
+  --rl-ink-30: rgba(26, 26, 26, 0.3);
+  --rl-ink-20: rgba(26, 26, 26, 0.2);
+  --rl-ink-10: rgba(26, 26, 26, 0.1);
+
   --rl-font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --rl-tracking-wide: 0.025em;
+  --rl-tracking-wider: 0.05em;
+  --rl-tracking-widest: 0.1em;
+  --rl-hover-opacity: 0.5;
+  --rl-breakpoint-md: 768px;
 }

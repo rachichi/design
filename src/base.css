@@ -1,0 +1,22 @@
+/* Opt-in global defaults shared by every project. */
+html,
+body {
+  font-family: var(--rl-font-sans, "Helvetica Neue", Helvetica, Arial, sans-serif);
+  color: var(--rl-ink, #1a1a1a);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--rl-warm-black, #1a1a1a);
+  color: var(--rl-beige, #f0e8df);
+}
+
+/* Full-viewport app: fixed header, scrolling content. */
+html.rl-fullscreen,
+html.rl-fullscreen body,
+html.rl-fullscreen #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}

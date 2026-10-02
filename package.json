@@ -1,7 +1,7 @@
 {
   "name": "@rachichi/design",
   "version": "0.1.0",
-  "description": "Shared header and design tokens for Rachel Liu's projects",
+  "description": "Shared header, footer, components and design tokens for Rachel Liu's projects",
   "license": "MIT",
   "type": "module",
   "repository": {
@@ -25,8 +25,11 @@
         "default": "./dist/index.cjs"
       }
     },
-    "./header.css": "./src/header.css",
+    "./styles.css": "./dist/styles.css",
+    "./base.css": "./src/base.css",
     "./tokens.css": "./src/tokens.css",
+    "./header.css": "./src/header.css",
+    "./components.css": "./src/components.css",
     "./theme.css": "./src/theme.css",
     "./tailwind-preset": {
       "import": {
@@ -44,7 +47,7 @@
     "src/*.css"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && node scripts/build-css.mjs",
     "dev": "vite demo",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run typecheck && npm run build"
