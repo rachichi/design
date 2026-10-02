@@ -1,0 +1,8 @@
+/* Tailwind v4: @import "@rachichi/design/theme.css"; after @import "tailwindcss"; */
+@theme {
+  --color-warm-black: #1a1a1a;
+  --color-beige: #f0e8df;
+  --color-beige-dark: #e8ddd2;
+  --color-cream: #f5ede0;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
