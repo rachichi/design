@@ -5,6 +5,10 @@
   min-height: 0;
 }
 
+.rl-page > .rl-header--fixed {
+  position: relative;
+}
+
 .rl-page__main {
   flex: 1 1 auto;
   min-height: 0;

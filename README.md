@@ -130,6 +130,8 @@ import "@rachichi/design/base.css";
 
 `clip` stops the content area from scrolling (maps, canvases); leave it off for pages that scroll.
 
+The shell never scrolls itself, so a `position="fixed"` header inside it stays in the layout flow instead of covering the content.
+
 ## Content components
 
 ```tsx
