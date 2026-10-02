@@ -29,6 +29,7 @@
   --rl-header-bg: #3a160d;
   --rl-header-border: transparent;
   --rl-header-divider: rgba(240, 232, 223, 0.2);
+  border-bottom-width: 0;
 }
 
 .rl-header--dark {
