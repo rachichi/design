@@ -1,0 +1,71 @@
+{
+  "name": "@rachichi/design",
+  "version": "0.1.0",
+  "description": "Shared header, footer, components and design tokens for Rachel Liu's projects",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachichi/design.git"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./styles.css": "./dist/styles.css",
+    "./base.css": "./src/base.css",
+    "./tokens.css": "./src/tokens.css",
+    "./header.css": "./src/header.css",
+    "./components.css": "./src/components.css",
+    "./theme.css": "./src/theme.css",
+    "./tailwind-preset": {
+      "import": {
+        "types": "./dist/tailwind-preset.d.ts",
+        "default": "./dist/tailwind-preset.js"
+      },
+      "require": {
+        "types": "./dist/tailwind-preset.d.cts",
+        "default": "./dist/tailwind-preset.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "src/*.css"
+  ],
+  "scripts": {
+    "build": "tsup && node scripts/build-css.mjs",
+    "dev": "vite demo",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "6.0.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsup": "8.5.1",
+    "typescript": "~5.9.3",
+    "vite": "8.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
