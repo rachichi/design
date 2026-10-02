@@ -1,6 +1,6 @@
 # @rachichi/design
 
-The shared look of Rachel Liu's projects: header, footer, type, tags, buttons, tabs, and the color and font tokens behind them. Each project stays in its own repo and installs this package; only the project-specific bits (title, theme, links, stack) live in the project.
+The shared design package of my personal projects: header, footer, type, tags, buttons, tabs, and the color and font tokens behind them. Each project stays in its own repo and installs this package; only the project-specific bits (title, theme, links, stack) live in the project.
 
 ## What's in it
 
